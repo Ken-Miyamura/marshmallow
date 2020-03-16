@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+html, body { height: 100%; }
+body { position:relative; margin: 0; padding: 0; font: 12px/100% 'Acme', sans-serif;
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+h1 {
+	margin: 0 0 30px;
+	font-size: 70px;
+	font-family: abril-fatface;
+	letter-spacing: -2px;
+	font-weight: 400;
+	font-style: italic;
+	font-variant: small-caps;
+}
+
+h2 {
+	margin: 0 0 30px;
+	font-size: 50px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: -2px;
+	font-weight: bold;
+}
+
+h3 {
+	margin: 0 0 30px;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: -2px;
+	font-weight: bold;
+}
+
+.centerBoxFix { position: fixed; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 100%; height: 20px; line-height: 160%; text-align: center; text-shadow: 0 1px 1px rgba(0,0,0,.3); }
+.centerBoxLast { z-index: -1; }
+
+a, a:visited { color: #fff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.cover { position: relative; width: 100%; margin: 0; padding: 0; color: #fff; }
+.centerBox {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 80%;
+	height: 500px;
+	line-height: 160%;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.centerBox i {
+	height: 120px;
+	padding: auto;
+	font-size: 100px;
+	transition: .8s;
+	transition-delay: .5s;
+} 
+.centerBox div {
+	margin: auto;
+	transition: .8s;
+	transition-delay: .8s;
+	font-size: 15px;
+}
+
+
+.section1 { height: 100%; background: url(../image/IMG_0503.jpg) no-repeat fixed; background-size: cover; }
+.section2 { height: 100%; background: url(../image/FullSizeRender.jpg) no-repeat fixed; background-size: cover; }
+.section3 { height: 130%; background: url(../image/IMG_0519.jpg) no-repeat fixed bottom center; background-size: cover; }
+.section4 { height: 120%; background: #A700FF; 
+background: -webkit-linear-gradient(450deg, #A700FF 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #A700FF 10%, #EAECC6 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(120deg, #A700FF 10%, #EAECC6 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #A700FF 10%, #EAECC6 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #A700FF 10%, #EAECC6 90%); /* W3C */
+}
+.section5 { height: 130%; background: url(../image/IMG_0495.jpg) no-repeat fixed; background-size: cover; }
+
+
+@media only screen and (min-width: 1023px) {
+.section1, .section3, .section5 { background-attachment: fixed; }
+}
+
+#page-top{
+  display: block;
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  padding: 20px 10px;
+  background: rgba(0,0,0,.7);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transform: rotateY(270deg);
+  transition: .5s;
+}
+#page-top:hover{
+  background: rgba(0,0,0,.8);
+}
+
+
+.ggmap {
+	position: relative;
+	padding-bottom: 40%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+ 
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+
+
+
+
